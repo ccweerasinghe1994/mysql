@@ -1,0 +1,8 @@
+
+
+-- ? RETURN ALL DATA WHERE ID IS BETWEEN 1 AND 5 INCLUDING(1,5)
+
+SELECT *
+FROM mg_properties
+WHERE id
+          BETWEEN 1 AND 5;

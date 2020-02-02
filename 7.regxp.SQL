@@ -1,0 +1,33 @@
+
+
+
+-- ? SELECT ALL WHICH INCLUDE "N"
+SELECT *
+FROM mg_properties
+WHERE name REGEXP 'N';
+
+-- ? SELECT ALL WhICH START WITH "Y"
+SELECT *
+FROM mg_properties
+WHERE name REGEXP '^Y';
+
+-- ? SELECT ALL WhICH END WITH "N"
+SELECT *
+FROM mg_properties
+WHERE name REGEXP 'N$';
+
+-- ? SELECT ALL WhICH HAS  "NN,ND,NG"
+SELECT *
+FROM mg_properties
+WHERE name REGEXP 'N[NDG]';
+
+-- ? SELECT ALL WhICH HAS  "N (A TO Z)"
+SELECT *
+FROM mg_properties
+WHERE name REGEXP 'N[A-Z]';
+
+
+-- ? SELECT ALL WhICH HAS MULTIPLE CONDITIONS
+SELECT *
+FROM mg_properties
+WHERE name REGEXP 'N|AJFG|SDGK';

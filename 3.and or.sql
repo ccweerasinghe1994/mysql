@@ -19,3 +19,24 @@ WHERE checkout = "2019-11-10"
 
 -- ! AND has a grater presicence than or when using combination 
 -- * it is good idea to use brackets
+
+SELECT *
+FROM bookings
+WHERE (checkout = "2019-11-10" AND checkin ="2019-11-1")
+  OR checkin > "2019-11-1";
+
+-- ! NOT operator
+
+SELECT *
+FROM bookings
+WHERE NOT((checkout = "2019-11-10" AND checkin ="2019-11-1")
+  OR checkin > "2019-11-1");
+
+
+-- ? converting not into normal 
+
+
+SELECT *
+FROM bookings
+WHERE NOT((checkout != "2019-11-10" OR checkin !="2019-11-1")
+  AND checkin <= "2019-11-1");
