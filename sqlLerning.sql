@@ -1,2 +1,0 @@
---  * SELECT ALL THE COLUMN FROM THE TABLE
-SELECT * FROM mg_properties;
