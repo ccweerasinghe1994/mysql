@@ -32,3 +32,12 @@ SELECT *
 FROM bookings
          LEFT JOIN rooms r on bookings.room_id = r.id;
 
+
+
+-- ! CROSS JOIN
+--? THIS WILL PRODUCE MULTIPLICATION OF EVERY COMBINATION OF EACH ROW
+SELECT *
+FROM mg_properties mg
+         CROSS JOIN mg_properties;
+
+-- * THIS CAN BE TYPE AS IMPLICITE WAY TO 
