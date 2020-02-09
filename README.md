@@ -13,5 +13,6 @@ ___
 
 ![data value](./img/3.PNG)
 ___
-
+># what is a field
+![](./img/4.PNG)
 
