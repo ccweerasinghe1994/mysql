@@ -11,7 +11,7 @@ ___
 1. ###  Each value is called data value
 1. ###  All for data values create a one record
 
-![data value](./img/3.png)
+![data value](./img/3.PNG)
 ___
 
 
