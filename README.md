@@ -38,3 +38,7 @@
     - [`DEFAULT`  Constraints(Theory)](./documentation/pdf/23.pdf)
     - [`NOT NULL`  Constraints(Theory)](./documentation/pdf/24.pdf)
     * [Altering The Table(Example)](./documentation/9.constraints.md)
+
+1. SQL good practices
+    - [Coding-Techniques-and-Best-Practices](./documentation/pdf/25.pdf)
+    - [MySQL-Workbench-Shortcuts](./documentation/pdf/26.pdf)
