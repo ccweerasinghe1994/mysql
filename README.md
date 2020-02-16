@@ -32,6 +32,9 @@
 
 1. Constraints
     * [Constraints (Example)](./documentation/9.constraints.md)
-    - [Primary key Constraints(Theory)](./documentation/pdf/20.pdf)
-    - [Foriegn key Constraints(Theory)](./documentation/pdf/21.pdf)
+    - [`Primary key` Constraints(Theory)](./documentation/pdf/20.pdf)
+    - [`Foriegn key` Constraints(Theory)](./documentation/pdf/21.pdf)
+    - [`Unique key` Constraints(Theory)](./documentation/pdf/22.pdf)
+    - [`DEFAULT`  Constraints(Theory)](./documentation/pdf/23.pdf)
+    - [`NOT NULL`  Constraints(Theory)](./documentation/pdf/24.pdf)
     * [Altering The Table(Example)](./documentation/9.constraints.md)
