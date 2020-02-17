@@ -42,3 +42,51 @@
 1. SQL good practices
     - [Coding-Techniques-and-Best-Practices](./documentation/pdf/25.pdf)
     - [MySQL-Workbench-Shortcuts](./documentation/pdf/26.pdf)
+
+
+1. SQL SELECT Statement
+    - [SQL `SELECT FROM`](./documentation/pdf/27.pdf)
+    - [SQL `SELECT WHERE`](./documentation/pdf/27.pdf)
+    - [SQL `SELECT AND`](./documentation/pdf/28.pdf)
+    - [SQL `SELECT OR`](./documentation/pdf/29.pdf)
+    - [SQL `SELECT OPERATOR PRESEDENCE`](./documentation/pdf/30.pdf)
+    - [SQL `SELECT WILD CARD CHARECTERS`](./documentation/pdf/31.pdf)
+    - [SQL `SELECT BETWEEN AND`](./documentation/pdf/32.pdf)
+    - [SQL `SELECT IS NOT NULL / IS NULL`](./documentation/pdf/33.pdf)
+    - [SQL `SELECT OTHER COMPARISION OPERATOERS1`](./documentation/pdf/34.pdf)
+    - [SQL `SELECT DISTICT`](./documentation/pdf/35.pdf)
+    - [SQL `SELECT AGGREGATE FUNCTIONS`](./documentation/pdf/36.pdf)
+    - [SQL `SELECT GROUP BY`](./documentation/pdf/37.pdf)
+    - [SQL `SELECT HAVING`](./documentation/pdf/38.pdf)
+    - [SQL `SELECT WHERE VS HAVING`](./documentation/pdf/39.pdf)
+    - [SQL `SELECT LIMIT`](./documentation/pdf/40.pdf)
+    - [SQL `SELECT LIMIT`](./documentation/Selct.md)
+
+
+1. SQL INSERT Statement
+    - [SQL `The-INSERT-Statement](./documentation/pdf/41.pdf)
+    - [SQL `Inserting Data INTO a New Table`](./documentation/pdf/42.pdf)
+    - [SQL `INSERT EXAMPLE `](./documentation/insert.md)
+  
+
+1. SQL UPDATE Statement
+    - [TCLs-COMMIT-and-ROLLBACK](./documentation/pdf/44.pdf)
+    - [The-UPDATE-Statement](./documentation/pdf/43.pdf)
+    - [SQL `UPDATE EXAMPLE `](./documentation/update.md)
+
+1. SQL DELETE Statement
+    - [The-DELETE-Statement](./documentation/pdf/45.pdf)
+    - [DROP-vs-TRUNCATE-vs-DELETE](./documentation/pdf/46.pdf)
+    - [SQL `UPDATE EXAMPLE `](./documentation/delete.md)
+  
+
+1. SQL AGGREDATED FUNCTIONS
+    - [COUNT()](./documentation/pdf/461.pdf)
+    - [SUM()](./documentation/pdf/47.pdf)
+    - [MIN/MAX()](./documentation/pdf/48.pdf)
+    - [AVG()](./documentation/pdf/49.pdf)
+    - [ROUND()](./documentation/pdf/50.pdf)
+    - [157 IFNULL() and COALESCE()](./documentation/pdf/51.pdf)
+    - [158 Another Example of Using COALESCE()](./documentation/pdf/52.pdf) 
+    - [SQL `AGGREDATED FUNCTIONS EXAMPLE `](./documentation/aggeregadedFunction.md)
+  
