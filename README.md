@@ -90,3 +90,17 @@
     - [158 Another Example of Using COALESCE()](./documentation/pdf/52.pdf) 
     - [SQL `AGGREDATED FUNCTIONS EXAMPLE `](./documentation/aggeregadedFunction.md)
   
+1. SQL JOINS 
+    - [Introduction to Joins](./documentation/pdf/53.pdf)
+    - [INNER JOIN](./documentation/pdf/54.pdf)
+    - [Duplicate Records](./documentation/pdf/55.pdf)
+    - [LEFT JOIN](./documentation/pdf/56.pdf)
+    - [RIGHT-JOIN](./documentation/pdf/57.pdf)
+    - [The New and the Old Join Syntax](./documentation/pdf/58.pdf)
+    - [JOIN-and-WHERE-Used-Together](./documentation/pdf/59.pdf)
+    - [CROSS-JOIN](./documentation/pdf/60.pdf)
+    - [Tips-and-Tricks-for-Joins](./documentation/pdf/62.pdf)
+    - [Join More Than One tabele](./documentation/pdf/61.pdf)
+    - [UNION-vs-UNION-ALL](./documentation/pdf/63.pdf)
+    - [SQL `JOINS EXAMPLE `](./documentation/joins.md)
+  
