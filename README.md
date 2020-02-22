@@ -110,5 +110,11 @@
     - [Subqueries EXISTS WHERE](./documentation/pdf/65.pdf)
     - [Subqueries SELECT FROM](./documentation/pdf/66.pdf)
 1. SQL SUB QUERIES 
-     - [SQL `SUB QURIES EXAMPLE `](./documentation/selfJoin.md)
+     - [SQL `SELF JOIN EXAMPLE `](./documentation/selfJoin.md)
      - [Subqueries `SELF JOIN`](./documentation/pdf/67.pdf)
+1. SQL VIEWS
+     - [SQL `VIEWS EXAMPLE `](./documentation/views.md)
+     - [SQL-VIEWS](./documentation/pdf/68.pdf)
+1. SQL STORED PROCEDURES
+     - [SQL `STORED PROCEDURES EXAMPLE `](./documentation/sp.md)
+     - [SQL-STORED PROCEDURES](./documentation/pdf/68.pdf)
