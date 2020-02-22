@@ -103,4 +103,7 @@
     - [Join More Than One tabele](./documentation/pdf/61.pdf)
     - [UNION-vs-UNION-ALL](./documentation/pdf/63.pdf)
     - [SQL `JOINS EXAMPLE `](./documentation/joins.md)
-  
+
+1. SQL SUB QUERIES 
+     - [SQL `SUB QURIES EXAMPLE `](./documentation/subqueries.md)
+    - [Subqueries-IN-WHERE](./documentation/pdf/64.pdf)
