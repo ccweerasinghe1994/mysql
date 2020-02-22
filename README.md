@@ -109,3 +109,6 @@
     - [Subqueries IN WHERE](./documentation/pdf/64.pdf)
     - [Subqueries EXISTS WHERE](./documentation/pdf/65.pdf)
     - [Subqueries SELECT FROM](./documentation/pdf/66.pdf)
+1. SQL SUB QUERIES 
+     - [SQL `SUB QURIES EXAMPLE `](./documentation/selfJoin.md)
+     - [Subqueries `SELF JOIN`](./documentation/pdf/67.pdf)
