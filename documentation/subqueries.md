@@ -44,13 +44,41 @@ WHERE e.emp_no IN (SELECT dp.emp_no FROM dept_manager dp);
 ---
 
 
->Sub queries in where 
+>Sub queries using `EXSISTS`
 
 ```sql 
-
+SELECT e.first_name, e.last_name
+FROM employees e
+WHERE EXISTS(SELECT * FROM dept_manager dm WHERE dm.emp_no = e.emp_no);
 
 ```
 ## **result** :-
+| first\_name | last\_name |
+| :--- | :--- |
+| Margareta | Markovitch |
+| Vishwani | Minakawa |
+| Ebru | Alpin |
+| Isamu | Legleitner |
+| Shirish | Ossenbruggen |
+| Karsten | Sigstam |
+| Krassimir | Wegerle |
+| Rosine | Cools |
+| Shem | Kieras |
+| Oscar | Ghazalie |
+| DeForest | Hagimont |
+| Leon | DasSarma |
+| Peternela | Onuegbe |
+| Rutger | Hofmeyr |
+| Sanjoy | Quadeer |
+| Dung | Pesch |
+| Przemyslawa | Kaelbling |
+| Hauke | Zhang |
+| Arie | Staelin |
+| Hilary | Kambil |
+| Tonny | Butterworth |
+| Marjo | Giarratana |
+| Xiaobin | Spinelli |
+| Yuchang | Weedman |
 
 
 
@@ -58,55 +86,73 @@ WHERE e.emp_no IN (SELECT dp.emp_no FROM dept_manager dp);
 >Sub queries in where 
 
 ```sql 
+SELECT a.*
+FROM (SELECT e.emp_no                                                AS employee_id,
+             MIN(de.dept_no)                                         AS department_code,
+             (SELECT emp_no FROM dept_manager WHERE emp_no = 110022) AS manager_id
+      FROM employees e
+               INNER JOIN dept_emp de on e.emp_no = de.emp_no
+      WHERE e.emp_no <= 10020
+      GROUP BY e.emp_no
+      ORDER BY e.emp_no) AS a
 
+UNION
 
-```
-## **result** :-
-
-
-
----
->Sub queries in where 
-
-```sql 
-
-
-```
-## **result** :-
-
-
-
----
->Sub queries in where 
-
-```sql 
-
-
-```
-## **result** :-
-
-
-
----
->Sub queries in where 
-
-```sql 
-
+SELECT b.*
+FROM (SELECT e.emp_no                                                AS employee_id,
+             MIN(de.dept_no)                                         AS department_code,
+             (SELECT emp_no FROM dept_manager WHERE emp_no = 110039) AS manager_id
+      FROM employees e
+               INNER JOIN dept_emp de on e.emp_no = de.emp_no
+      WHERE e.emp_no > 10020
+      GROUP BY e.emp_no
+      ORDER BY e.emp_no
+      LIMIT 20) AS b    
 
 ```
 ## **result** :-
 
+| employee\_id | department\_code | manager\_id |
+| :--- | :--- | :--- |
+| 10001 | d005 | 110022 |
+| 10002 | d007 | 110022 |
+| 10003 | d004 | 110022 |
+| 10004 | d004 | 110022 |
+| 10005 | d003 | 110022 |
+| 10006 | d005 | 110022 |
+| 10007 | d008 | 110022 |
+| 10008 | d005 | 110022 |
+| 10009 | d006 | 110022 |
+| 10010 | d004 | 110022 |
+| 10011 | d009 | 110022 |
+| 10012 | d005 | 110022 |
+| 10013 | d003 | 110022 |
+| 10014 | d005 | 110022 |
+| 10015 | d008 | 110022 |
+| 10016 | d007 | 110022 |
+| 10017 | d001 | 110022 |
+| 10018 | d004 | 110022 |
+| 10019 | d008 | 110022 |
+| 10020 | d004 | 110022 |
+| 10021 | d005 | 110039 |
+| 10022 | d005 | 110039 |
+| 10023 | d005 | 110039 |
+| 10024 | d004 | 110039 |
+| 10025 | d005 | 110039 |
+| 10026 | d004 | 110039 |
+| 10027 | d005 | 110039 |
+| 10028 | d005 | 110039 |
+| 10029 | d004 | 110039 |
+| 10030 | d004 | 110039 |
+| 10031 | d005 | 110039 |
+| 10032 | d004 | 110039 |
+| 10033 | d006 | 110039 |
+| 10034 | d007 | 110039 |
+| 10035 | d004 | 110039 |
+| 10036 | d003 | 110039 |
+| 10037 | d005 | 110039 |
+| 10038 | d009 | 110039 |
+| 10039 | d003 | 110039 |
+| 10040 | d005 | 110039 |
 
 
----
->Sub queries in where 
-
-```sql 
-
-
-```
-## **result** :-
-
-
-
----
