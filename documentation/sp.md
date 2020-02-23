@@ -70,4 +70,50 @@ END
 | first\_name | last\_name | AVG\(s.salary\) |
 | :--- | :--- | :--- |
 | Lillian | Fontet | 48193.8000 |
+---
 
+>using OUT parameters
+```sql
+CREATE DEFINER=`root`@`localhost` PROCEDURE `outparametrs`(IN employee_number INT,OUT p_avg_salary DECIMAL(10,2),OUT p_avg_salaryc DECIMAL(10,5))
+BEGIN
+SELECT AVG(s.salary) INTO p_avg_salary
+FROM employees E
+         INNER JOIN salaries s on e.emp_no = s.emp_no where e.emp_no = employee_number limit 10;
+SELECT AVG(s.salary) INTO p_avg_salaryc
+FROM employees E
+         INNER JOIN salaries s on e.emp_no = s.emp_no where e.emp_no = employee_number limit 100;
+END
+
+>result 
+
+
+```
+
+
+```sql
+
+set @p_avg_salary = 0;
+set @p_avg_salaryc = 0;
+call employees.outparametrs(11300, @p_avg_salary, @p_avg_salaryc);
+select @p_avg_salary, @p_avg_salaryc;
+```
+| @p\_avg\_salary | @p\_avg\_salaryc |
+| :--- | :--- |
+| 48193.800000000000000000000000000000 | 48193.800000000000000000000000000000 |
+
+---
+
+>stored function
+
+```sql 
+CREATE FUNCTION `adf` ()
+RETURNS INTEGER
+BEGIN
+declare a int;
+SELECT 
+    SUM(emp_no)
+INTO a FROM
+    employees;
+RETURN a;
+END
+```
